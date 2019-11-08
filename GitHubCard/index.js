@@ -85,6 +85,9 @@ function newCard(user) {
   img.src = user.data.avatar_url;
   username.textContent = user.data.login;
   followers.textContent = `Followers${user.data.followers}`;
+  following.textContent = `Following${user.data.following}`;
+  bio.textContent = `Bio${user.data.bio}`;
+
   //css classes
   card.classList.add('card');
   cardInfo.classList.add('card-info');
